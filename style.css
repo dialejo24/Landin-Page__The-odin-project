@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+header{
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4em;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+}
+.header__top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5em;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 500;
+    color:rgb(246, 250, 189);
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2.5px;
+    display: flex;
+    align-items: center;
+}
+.first-letter{
+    font-size: 3.3rem;
+    font-weight: 900;
+}
+.links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap:1.5em;
+    align-items: center;
+}
+.links a{
+    text-decoration: none;
+    color:#E5E7EB;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: all .3s ease-in;
+    border-radius: 15px;
+    padding: .3em 1.6em;
+    display: inline-block;
+}
+.links a:hover{
+    background-color: #E5E7EB;
+    color:#1F2937;
+}
+.header__info{
+    margin-top: 3em;
+}
+
+.text__info{
+    margin-bottom: 2.5em;
+}
+.text__info h1{
+    color:white;
+    font-weight: 900;
+    margin-bottom: .6em;
+}
+.text__info p{
+    color:#E5E7E5;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: .9em;
+}
+.text__info a{
+    text-decoration: none;
+    color:white;
+    background-color: #3882F6;
+    padding:.3em 1.6em;
+    display: inline-block;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    transition: all .3s ease-out;
+}
+.text__info a:hover{
+    transform:translate(0, 7px);
+}
+
+
+.info__section{
+    padding-block: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info__section h2{
+    text-align: center;
+}
+.sec__items{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap:1.5em;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item img{
+    width:70%;
+}
+.item p{
+    line-height: 1.5;
+    text-align: center;
+}
+
+.quote__section{
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    padding-block: 3em;
+}
+.quote__section p{
+    line-height: 1.7;
+    text-align: justify;
+}
+.author{
+    font-weight: 700;
+    text-align: right;
+}
+
+
+.signUp__section{
+    padding-block: 3em;
+    display: flex;
+    justify-content: center;
+}
+.decoration{
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding:1em;
+}
+.decoration h3{
+    color:white;
+}
+.decoration p{
+    margin-top:.5em;
+    line-height: 1.5;
+    color:#E5E7E5;
+    margin-bottom: 1em;
+}
+.decoration a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 1.2rem;
+    padding:.3em 1em;
+    border:white 2px solid;
+    border-radius: 10px;
+    display: inline-block;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+    padding-block: 1em;
+    color:#E5E7E5;
+}
+
+@media (min-width: 700px){
+    .header__top{
+        flex-direction: row;
+        gap:0;
+        justify-content: space-between;
+    }
+    .links{
+        flex-direction: row;
+        gap:0;
+    }
+    .header__info{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .text__info{
+        width:50%; 
+    }
+    .img{
+        width:40%;
+    }
+    .sec__items{
+        flex-direction: row;
+        gap:0;
+        justify-content: space-between;
+    }
+    .item{
+        width:22%;
+    }
+    .item img{
+        width:auto;
+    }
+    .quote__section blockquote{
+        width:70%;
+    }
+    .quote{
+        font-size: 1.4rem;
+    }
+    .author{
+        font-size: 1.2rem;
+        margin-top: .8em;
+    }
+    .decoration{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
