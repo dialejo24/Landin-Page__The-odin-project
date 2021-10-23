@@ -7,6 +7,9 @@ CSS properties.
 - CSS Flexbox
 - responsive approach
 
+##Link
+Live site URL: https://dialejo24.github.io/Landin-Page__The-odin-project/
+
 ## Acknowledgements
 Huge thanks to Pexels and Unsplash for the photos that they provide on their platforms, specially to the photographers who
 kindly upload those free photos.
